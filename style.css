@@ -20,8 +20,10 @@ p {
 
 }
 .container {
-
+    display: flex;
+    justify-content: space-between;
 }
+
 .logo {
 font-size: 32px;
 line-height: 60px;
