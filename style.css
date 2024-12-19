@@ -15,3 +15,32 @@ body {
 p {
 
 } */ 
+
+.header {
+
+}
+.container {
+
+}
+.logo {
+font-size: 32px;
+line-height: 60px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: #F7F7F7;
+}
+
+.header__nav {
+    
+}
+
+.header__nav a {
+font-size: 23px;
+line-height: 60px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: #F7F7F7;
+}
+
