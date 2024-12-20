@@ -17,11 +17,16 @@ p {
 } */ 
 
 .header {
-
+min-height: 800px;
+padding: 19px 0;
+background-image: url("image/Rectangle.png");
 }
-.container {
 
+.header__container {
+display: flex;
+justify-content: space-between;
 }
+
 .logo {
 font-size: 32px;
 line-height: 60px;
@@ -31,8 +36,12 @@ text-decoration-skip-ink: none;
 color: #F7F7F7;
 }
 
-.header__nav {
-    
+.header__nav ul {
+display: flex;
+}
+
+.header__nav li + li {
+margin-left: 61px;
 }
 
 .header__nav a {
