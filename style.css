@@ -17,39 +17,82 @@ p {
 } */ 
 
 .header {
-min-height: 800px;
-padding: 19px 0;
-background-image: url("image/Rectangle.png");
+    min-height: 800px;
+    padding: 0px;
+    background-image: url("image/Rectangle.png");
 }
 
 .header__container {
-display: flex;
-justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 19px;
+    gap: 20px;
 }
 
 .logo {
-font-size: 32px;
-line-height: 60px;
-text-align: left;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
-color: #F7F7F7;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0px;
+    padding-left: 30px;
 }
 
-.header__nav ul {
-display: flex;
+.WILDLIFE {
+    font-family: Open Sans;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 60px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #f7f7f7;
 }
 
-.header__nav li + li {
-margin-left: 61px;
+h1 {
+    display: block;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
 }
 
-.header__nav a {
-font-size: 23px;
-line-height: 60px;
-text-align: left;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
-color: #F7F7F7;
+svg[style] {
+    width: 70px;
+    height: 60px;
+    top: 19px;
+    left: 120px;
+    padding: 0.8px 0.73px 0.77px 1.07px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+svg:not(:wild) {
+    overflow-clip-margin: content-box;
+    overflow: hidden;
+}
+
+.articles {
+    font-family: Open Sans;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 60px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;    
+    color: #f7f7f7;
+}
+.contact {
+    font-family: Open Sans;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 60px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #f7f7f7;
+}
+.login {
 }
 
