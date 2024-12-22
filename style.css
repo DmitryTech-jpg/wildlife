@@ -16,6 +16,8 @@ p {
 
 } */ 
 
+
+ /* стили для шапки */
 .header {
     min-height: 800px;
     padding: 0px;
@@ -58,7 +60,7 @@ h1 {
     unicode-bidi: isolate;
 }
 
-svg[style] {
+/* svg[style] {
     width: 70px;
     height: 60px;
     top: 19px;
@@ -66,12 +68,12 @@ svg[style] {
     padding: 0.8px 0.73px 0.77px 1.07px;
     gap: 0px;
     opacity: 0px;
-}
+} */
 
-svg:not(:wild) {
+/* svg:not(:wild) {
     overflow-clip-margin: content-box;
     overflow: hidden;
-}
+} */
 
 .articles {
     font-family: Open Sans;
@@ -94,5 +96,13 @@ svg:not(:wild) {
     color: #f7f7f7;
 }
 .login {
+    background-image: url(/image/Rectangle\ —\ копия.png);
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 26.95px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #f7f7f7;
 }
 
