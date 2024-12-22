@@ -17,7 +17,35 @@ p {
 } */ 
 
 
+/* адаптивная верстка */
+
+@media (max-width: 1200px) {
+    .adaptive {
+        width: 1024px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .adaptive {
+        width: 768px;
+    }
+}
+
+@media (max-width: 768px) {
+    .adaptive {
+        width: 420px;
+    }
+}
+
+@media (max-width: 420px) {
+    .adaptive {
+        width: 340px;
+    }
+}
+
+
  /* стили для шапки */
+
 .header {
     min-height: 800px;
     padding: 0px;
@@ -60,20 +88,6 @@ h1 {
     unicode-bidi: isolate;
 }
 
-/* svg[style] {
-    width: 70px;
-    height: 60px;
-    top: 19px;
-    left: 120px;
-    padding: 0.8px 0.73px 0.77px 1.07px;
-    gap: 0px;
-    opacity: 0px;
-} */
-
-/* svg:not(:wild) {
-    overflow-clip-margin: content-box;
-    overflow: hidden;
-} */
 
 .articles {
     font-family: Open Sans;
