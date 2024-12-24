@@ -7,8 +7,8 @@ body {
 }
 
 .container {
-    max-width: 1470px;
-    padding: 0 15px;
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 /*
@@ -47,9 +47,11 @@ p {
  /* стили для шапки */
 
 .header {
-    min-height: 800px;
-    padding: 0px;
-    background-image: url("image/Rectangle.png");
+    width: 100%;
+    min-height: 780px;
+    background-image: url(/image/Rectangle.png);
+    background-size: 100%;
+    background-position: center;
 }
 
 .header__container {
@@ -60,12 +62,18 @@ p {
     gap: 20px;
 }
 
+.header .nav li {
+    padding: 0 10px;
+}
+
+.li {
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+}
+
 .logo {
     display: flex;
-    align-items: center;
-    gap: 10px;
-    margin: 0px;
-    padding-left: 30px;
 }
 
 .WILDLIFE {
@@ -88,6 +96,9 @@ h1 {
     unicode-bidi: isolate;
 }
 
+.elements {
+    
+}
 
 .articles {
     font-family: Open Sans;
@@ -96,7 +107,8 @@ h1 {
     line-height: 60px;
     text-align: left;
     text-underline-position: from-font;
-    text-decoration-skip-ink: none;    
+    text-decoration-skip-ink: none;  
+    justify-content: space-between; 
     color: #f7f7f7;
 }
 .contact {
@@ -107,6 +119,7 @@ h1 {
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
+    justify-content: space-between;
     color: #f7f7f7;
 }
 .login {
