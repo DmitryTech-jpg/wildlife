@@ -1,22 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-body {
-    font-family: "Open Sans";
-    font-weight: 400;
-    font-size: normal; /* применить разные размеры шрифтов по факту */
-}
-
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-/*
-p {
-
-} */ 
-
-
 /* адаптивная верстка */
 
 @media (max-width: 1200px) {
@@ -44,13 +27,28 @@ p {
 }
 
 
+body {
+    width: auto;
+    height: 2506px;
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: normal; /* применить разные размеры шрифтов по факту */
+}
+
+.container {
+    width: auto;
+    margin: 0 auto;
+}
+
+
  /* стили для шапки */
 
 .header {
     width: 100%;
-    min-height: 780px;
+    min-height: 779px;
     background-image: url(/image/Rectangle.png);
-    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
 }
 
@@ -58,8 +56,6 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 19px;
-    gap: 20px;
 }
 
 .header .nav li {
@@ -74,13 +70,15 @@ p {
 
 .logo {
     display: flex;
+    margin-left: 120px;
+    margin-top: 19px;
 }
 
 .WILDLIFE {
     font-family: Open Sans;
     font-size: 32px;
     font-weight: 400;
-    line-height: 60px;
+    line-height: 40px;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
@@ -96,10 +94,6 @@ h1 {
     unicode-bidi: isolate;
 }
 
-.elements {
-    
-}
-
 .articles {
     font-family: Open Sans;
     font-size: 23px;
@@ -111,6 +105,7 @@ h1 {
     justify-content: space-between; 
     color: #f7f7f7;
 }
+
 .contact {
     font-family: Open Sans;
     font-size: 23px;
@@ -122,6 +117,7 @@ h1 {
     justify-content: space-between;
     color: #f7f7f7;
 }
+
 .login {
     background-image: url(/image/Rectangle\ —\ копия.png);
     font-size: 23px;
@@ -131,5 +127,14 @@ h1 {
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     color: #f7f7f7;
+}
+
+.survival {
+    margin-left: 120px;
+    margin-top: 199px;
+    font-size: 48px;
+    line-height: 72px;
+    letter-spacing: 2px;
+    color: #cd6326;
 }
 
