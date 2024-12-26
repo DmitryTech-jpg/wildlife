@@ -45,12 +45,6 @@ body {
  /* стили для шапки */
 
 .header {
-    width: 100%;
-    min-height: 779px;
-    background-image: url(/image/Rectangle.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
 .header__container {
@@ -121,7 +115,6 @@ h1 {
 
 .login {
     font-family: "Roboto";
-    background-image: url(/image/Rectangle\ —\ копия.png);
     font-size: 23px;
     font-weight: 400;
     line-height: 26.95px;
