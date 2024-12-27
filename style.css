@@ -96,9 +96,11 @@
     color: #f7f7f7;
 }
 
+
 .header__search-pic {
     padding-top: 19px;
 }
+
 
 .header__link:hover, .header__link:focus, .header__link:active {
     color: #CD6326;
