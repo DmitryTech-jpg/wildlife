@@ -1,3 +1,4 @@
+/* шрифты */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
@@ -27,136 +28,91 @@
     }
 }
 
+/* parents */
 
-body {
-    width: auto;
-    height: 2506px;
-    font-family: "Open Sans";
-    font-weight: 400;
-    font-size: normal; /* применить разные размеры шрифтов по факту */
-}
-
-.container {
-    width: auto;
+.wrapper {
+    max-width: 1060px;
     margin: 0 auto;
 }
 
-
- /* стили для шапки */
-
-.header {
-}
-
-.header__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.header .nav li {
-    padding: 0 10px;
-}
-
-.li {
-    text-decoration: none;
-    list-style: none;
-    display: inline-block;
-}
-
-.logo {
-    display: flex;
-    margin-left: 120px;
-    margin-top: 19px;
-}
-
-.WILDLIFE {
-    font-family: "Roboto";
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 40px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    color: #f7f7f7;
-}
-
-h1 {
-    display: block;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    unicode-bidi: isolate;
-}
-
-.articles {
-    font-family: Open Sans;
+.body {
+    font-family: 'Open Sans';
+    font-style: normal;
     font-size: 23px;
-    font-weight: 400;
     line-height: 60px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;  
-    justify-content: space-between; 
-    color: #f7f7f7;
-}
-
-.contact {
-    font-family: Open Sans;
-    font-size: 23px;
-    font-weight: 400;
-    line-height: 60px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    justify-content: space-between;
-    color: #f7f7f7;
-}
-
-.login {
-    font-family: "Roboto";
-    font-size: 23px;
-    font-weight: 400;
-    line-height: 26.95px;
-    text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    color: #f7f7f7;
-}
-
-.survival {
-    margin-left: 120px;
-    margin-top: 199px;
-    font-size: 48px;
-    line-height: 72px;
-    letter-spacing: 2px;
-    color: #cd6326;
-}
-
-
-/* блок main */
-
-.title {
-    margin-top: 120px;
-    margin-left: center;
-    font-family: Open Sans;
-    font-size: 48px;
-    font-weight: 400;
-    line-height: 72px;
-    text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
+    font-weight: normal;
     color: #333333;
 }
 
-.h2 {
-    margin-top: 20px;
-    font-family: Open Sans;
-    font-size: 24px;
+/* header  styles start */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #f7f7f7;
+}
+
+.header__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.header__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header__item {
+    margin-right: 61px;
+}
+
+.header__item:last-child {
+    margin-right: 0;
+}
+
+.logo {
+    font-family: 'Roboto';
+    font-size: 32px;
     font-weight: 400;
-    line-height: 36px;
-    text-align: center;
+    line-height: 60px;
+    text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    color: #666666;
 }
+
+.header__link {
+    font-family: 'Open Sans';
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 60px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #f7f7f7;
+}
+
+
+.header__search-pic {
+    padding-top: 19px;
+}
+
+
+.header__link:hover, .header__link:focus, .header__link:active {
+    color: #CD6326;
+}
+
+/* header  styles end */
+
+/* intro  styles start */
+
+.intro {
+    height: 100vh;
+    background: url(/image/Rectangle.png) no-repeat center;
+    background-size: cover;
+}
+/* intro  styles end */
