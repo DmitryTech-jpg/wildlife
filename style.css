@@ -31,7 +31,7 @@
 /* parents */
 
 .wrapper {
-    max-width: 1060px;
+    max-width: 1275px;
     margin: 0 auto;
 }
 
@@ -83,6 +83,7 @@
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
+    margin-right: 590px;
 }
 
 .header__link {
@@ -96,11 +97,29 @@
     color: #f7f7f7;
 }
 
+.sing-in__button {
+    font-family: Roboto;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 26.95px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #F7F7F7;
+    background: transparent;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
 .header__search-pic {
     padding-top: 19px;
 }
 
 .header__link:hover, .header__link:focus, .header__link:active {
+    color: #CD6326;
+}
+
+.header__links:hover, .header__links:focus, .header__links:active {
     color: #CD6326;
 }
 
@@ -112,5 +131,50 @@
     height: 100vh;
     background: url(/image/Rectangle.png) no-repeat center;
     background-size: cover;
+    padding-top: 210px;
+}
+
+.intro__title {
+    font-family: Open Sans;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 72px;
+    letter-spacing: 2px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #CD6326;
+    margin-bottom: 51px;
+}
+
+.intro__subtitle {
+    max-width: 274px;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #F7F7F7;
+    margin-bottom: 49px;
+}
+
+.intro__button {
+    padding: 16px 42px;
+    font-family: Roboto;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 26.95px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #F7F7F7;
+    background: #CD6326;
+    border-radius: 5px;
+}
+
+.intro__button:hover, .intro__button:focus, .intro__button:active {
+    background: #743511;
 }
 /* intro  styles end */
