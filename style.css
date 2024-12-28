@@ -75,6 +75,10 @@
     margin-right: 0;
 }
 
+.header__logo-link {
+    display: flex;
+    flex-direction: row;
+}
 .logo {
     font-family: 'Roboto';
     font-size: 32px;
@@ -83,7 +87,7 @@
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    margin-right: 590px;
+    margin-left: 15px;
 }
 
 .header__link {
@@ -97,6 +101,12 @@
     color: #f7f7f7;
 }
 
+.header__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .sing-in__button {
     font-family: Roboto;
     font-size: 23px;
@@ -107,7 +117,9 @@
     text-decoration-skip-ink: none;
     color: #F7F7F7;
     background: transparent;
-    padding: 10px 10px;
+    height: 50px;
+    padding: 10px 25px;
+    border: 2px solid #CD6326;
     border-radius: 5px;
 }
 
