@@ -141,7 +141,7 @@
 
 .intro {
     height: 100vh;
-    background: url(/image/Rectangle.png) no-repeat center;
+    background: url(/src/assets/img/Hero.png) no-repeat center;
     background-size: cover;
     padding-top: 210px;
 }
