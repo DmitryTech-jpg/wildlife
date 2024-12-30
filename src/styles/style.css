@@ -243,8 +243,93 @@
 }
 
 .animal__card {
-    margin: 30px;
+    position: relative;
+    margin: 0 30px;
+    display: flex;
 }
 
+.animal__card-title-deer {
+    position: absolute;
+    padding-left: 124px;
+    font-family: Open Sans;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    bottom: 70px;
+    color: #f7f7f7;
+}
+
+.animal__card-desc-deer {
+    position: absolute;
+    padding-left: 60px;
+    font-family: Open Sans;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    bottom: 40px;
+    color: #F7F7F7;
+}
+
+.animal__card-title-squirrel {
+    position: absolute;
+    padding-left: 109px;
+    font-family: Open Sans;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    bottom: 70px;
+    color: #f7f7f7;
+}
+
+.animal__card-desc-squirrel {
+    position: absolute;
+    padding-left: 75px;
+    font-family: Open Sans;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    bottom: 40px;
+    color: #F7F7F7;
+}
+
+.animal__card-title-bird {
+    position: absolute;
+    padding-left: 129px;
+    font-family: Open Sans;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    bottom: 70px;
+    color: #f7f7f7;
+}
+
+.animal__card-desc-bird {
+    position: absolute;
+    padding-left: 88px;
+    font-family: Open Sans;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    bottom: 40px;
+    color: #F7F7F7;
+}
 
 /* main styles end */
