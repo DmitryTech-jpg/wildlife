@@ -223,4 +223,58 @@
     text-decoration-skip-ink: none;
     color: #666666;
 }
+
+.animals {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 120px;
+}
+
+.wrapper-full {
+    display: flex;
+}
+
+.animal__card {
+    position: relative;
+    padding-left: 30px;
+    padding-right: 40px;
+}
+
+.animal__card-deer {
+    padding-right: 20px;
+}
+
+.animal__card-bird {
+    padding-left: 20px;
+}
+.animal__card-title {
+    font-family: Open Sans;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 36px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    position: absolute;
+    color: #F7F7F7;
+    bottom: 77px;
+    right: 150px;
+    left: 150px;
+}
+
+.animal__card-desc {
+    font-family: Open Sans;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    position: absolute;
+    color: #F7F7F7;
+    bottom: 40px;
+    left: 100px;
+
+}
+
 /* main styles end */
