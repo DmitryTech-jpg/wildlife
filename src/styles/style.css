@@ -352,7 +352,7 @@
 .email-form__wrap {
     border: 1px solid #000000;
     width: 540px;
-    height: 60px;
+    height: 62px;
     border-top-left-radius: 16px;
     border-bottom-left-radius: 16px;
     margin-bottom: 240px;
@@ -395,7 +395,7 @@
 
 .email-form__submit {
     width: 120px;
-    height: 60px;
+    height: 62px;
     background-color: #CD6326;
     border-top-right-radius: 16px;
     border-bottom-right-radius: 16px;
