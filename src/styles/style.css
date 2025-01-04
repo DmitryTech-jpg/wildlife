@@ -52,6 +52,12 @@
     left: 0;
     width: 100%;
     color: #f7f7f7;
+    transition: .25s linear;
+    z-index: 999;
+}
+
+.header__active {
+    background: #784e2c;
 }
 
 .header__wrapper {

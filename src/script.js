@@ -1,3 +1,14 @@
+(function () {
+    const header = document.querySelector('.header');
+    window.onscroll = () => {
+        if (window.scrollY > 779) {
+            header.classList.add('header__active');
+        } else {
+            header.classList.remove('header__active');
+        }
+    };
+}());
+
 window.addEventListener("resize", AutoScale);
 
 AutoScale();
@@ -14,3 +25,4 @@ function AutoScale() {
         ChangeScale("small");
     }
 }
+
