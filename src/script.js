@@ -9,20 +9,14 @@
     };
 }());
 
-window.addEventListener("resize", AutoScale);
-
-AutoScale();
-
-function AutoScale() {
-    let width = window.innerWidth;
-    if(width > 1280) {
-        ChangeScale("high"); // big normal small little
-    }
-    else if(width <= 1280 && width > 720) {
-        ChangeScale("big");
-    }
-    else if(width < 720) {
-        ChangeScale("small");
-    }
-}
-
+(function () {
+    const burgerItem = document.querySelector('.burger');
+    const menu = document.querySelector('.header__nav');
+    const menuCloseItem = document.querySelector('.header__nav-close');
+    burgerItem.addEventListener('click', () => {
+        menu.classList.add('header__nav_active');
+    });
+    menuCloseItem.addEventListener('click', () => {
+        menu.classList.remove('header__nav_active');
+    });
+}());
