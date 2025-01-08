@@ -53,7 +53,25 @@
                 <p class="intro__subtitle">
                     What this means is that we exist to help protect our environment and do in numbers of ways. You can save the planet by donation.
                 </p>
-                <button type="submit" class="intro__button">Donate</button>
+                <button type="submit" class="intro__button" id="btn">Donate</button>
+                <div class="modal__window" id="modal">
+                    <div class="modal__content">
+                        <form class="donate-form">
+                            <fieldset class="donate-form__wrap">
+                                <p class="donate-name__info">
+                                    <input type="text" class="donate-name__filed" placeholder="Name">
+                                </p>
+                                <p class="donate-form__info">
+                                    <input type="text" class="donate-form__field" placeholder="1000$">
+                                </p>
+                            </fieldset>
+                            <button type="submit" class="email-form__submit">Send</button>
+                        </form>
+                        <span class="close"></span>
+                        <p>Donate</p>
+                        <button type="submit" class="donate-form__submit">Send</button>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="main__title" id="articles">

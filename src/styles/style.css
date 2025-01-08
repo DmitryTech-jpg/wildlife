@@ -222,6 +222,22 @@
 .intro__button:hover, .intro__button:focus, .intro__button:active {
     background: #743511;
 }
+
+.modal__window {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 480px;
+    height: 600px;
+    overflow: auto;
+    background-color: #F7F7F7;
+}
+
+.modal__content {
+    background-color: #F7F7F7;
+}
 /* intro  styles end */
 
 /* main styles start */
