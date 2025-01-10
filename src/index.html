@@ -53,23 +53,23 @@
                 <p class="intro__subtitle">
                     What this means is that we exist to help protect our environment and do in numbers of ways. You can save the planet by donation.
                 </p>
-                <button type="submit" class="intro__button" id="btn">Donate</button>
-                <div class="modal__window" id="modal">
-                    <div class="modal__content">
-                        <form class="donate-form">
-                            <fieldset class="donate-form__wrap">
-                                <p class="donate-name__info">
-                                    <input type="text" class="donate-name__filed" placeholder="Name">
-                                </p>
-                                <p class="donate-form__info">
-                                    <input type="text" class="donate-form__field" placeholder="1000$">
-                                </p>
-                            </fieldset>
-                            <button type="submit" class="email-form__submit">Send</button>
-                        </form>
-                        <span class="close"></span>
-                        <p>Donate</p>
-                        <button type="submit" class="donate-form__submit">Send</button>
+                <button type="button" class="intro__button" id="openModal">Donate</button>
+        
+                <div id="modal" class="modal">
+                    <div class="modal-content">
+                        <h2 class="modal__form-title">Donate</h2>
+                        <div class="wrap__form">
+                            <form id="form1" class="form1">
+                                <label for="name1" class="name1">Your name:</label>
+                                <input type="text" id="name1" class="name1__form" placeholder="Name" required>
+                            </form>
+        
+                            <form id="form2" class="form2">
+                                <label for="name2">Amount:</label>
+                                <input type="text" id="name2" class="name2__form" placeholder="1000$" required>
+                            </form>
+                        </div>
+                        <button id="confirmButton" class="modal__btn">Send</button>
                     </div>
                 </div>
             </div>

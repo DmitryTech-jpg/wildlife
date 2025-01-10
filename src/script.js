@@ -21,19 +21,20 @@
     });
 }());
 
-var modal__window = document.getElementById('modal');
-var btn = document.getElementById("btn");
-var span = document.getElementsByClassName("close")[0];
+const modal = document.getElementById("modal");
+const openModalButton = document.getElementById("openModal");
+const closeModalButton = document.querySelector(".close-button");
 
-btn.onclick = function() {
-    modal__window.style.display = "block";
-}
-span.onclick = function() {
-    modal__window.style.display = "none";
-}
+openModalButton.addEventListener("click", function() {
+    modal.style.display = "block";
+});
 
-window.onclick = function(event) {
-    if (event.target == modal__window) {
-        modal__window.style.display = "none";
-    };
-}
+closeModalButton.addEventListener("click", function() {
+    modal.style.display = "none";
+});
+
+window.addEventListener("click", function(event) {
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+});
