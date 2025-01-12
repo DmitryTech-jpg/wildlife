@@ -239,13 +239,13 @@
 
 .modal-content {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     font-family: Open Sans;
-    background-color: #F7F7F7;
+    background-color: #FCFCFC;
     margin: auto;
-    padding: 20px;
+    padding: 0;
     border: 1px solid #888;
     border-radius: 15px;
     width: 480px;
@@ -255,34 +255,82 @@
     transform: translateY(-50%);
 }
 
-.modal__form-title {
+.h3 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 16px;
+    margin-bottom: auto;
+    font-family: Open Sans;
     font-size: 48px;
     font-weight: 400;
     line-height: 72px;
     text-align: center;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    color: #333333;
 }
 
-.form1 {
+.your__name {
+    width: 399px;
+    height: 65px;
     font-size: 17px;
     font-weight: 400;
     line-height: 27px;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
+    color: #BDBDBD;
 }
 
-.name1__form {
+.amount {
+    width: 399px;
+    height: 65px;
     font-size: 17px;
     font-weight: 400;
     line-height: 27px;
+    color: #BDBDBD;
+}
+
+.comment {
+    width: 399px;
+    height: 135px;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 27px;
+    color: #BDBDBD;
+}
+
+.input__field {
+    width: 399px;
+    background: transparent;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    border: 0;
+    border-bottom: 2px solid #BDBDBD;
+    color: #BDBDBD;
+}
+.input__filed::placeholder {
+    font-family: Open Sans;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
+    color: #BDBDBD;
+}
+
+.comment__field {
+    width: 399px;
+    height: 100px;
+    border: 2px solid #BDBDBD;
+}
+
+.btn {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: auto;
+    margin-bottom: 40px;  
 }
 
 .modal__btn {
-    margin-bottom: 40px;
     width: 399px;
     height: 66px;
     background-color: #E39128;
@@ -465,6 +513,7 @@
     margin-bottom: 240px;
     border-right: 0px;
 }
+
 .email-form__info {
     display: flex;
     flex-wrap: wrap;
