@@ -44,17 +44,11 @@
 /* header  styles start */
 
 .header {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    color: #f7f7f7;
-    transition: .25s linear;
-    z-index: 999;
-}
-
-.header__active {
-    background: #784e2c;
+    color: #F7F7F7;
 }
 
 .header__wrapper {
