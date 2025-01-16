@@ -35,6 +35,16 @@ openModalButton.addEventListener("click", function() {
 
 window.onclick = closeModal;
 
+document.getElementById("confirmButton").onclick = function() {
+    const name = document.getElementById("name").value;
+    const amount = document.getElementById("amount").value;
+    const comment = document.getElementById("comment").value;
+
+    alert(`You successfully sent a donation of ${amount} from ${name} with comment: "${comment}"!`);
+
+    document.getElementById("modal").style.display = "none";
+}
+
 window.addEventListener("click", function(event) {
     if (event.target === modal) {
         modal.style.display = "none";
