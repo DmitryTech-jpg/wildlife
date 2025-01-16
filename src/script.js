@@ -40,3 +40,10 @@ window.addEventListener("click", function(event) {
         modal.style.display = "none";
     }
 });
+
+document.getElementById('email').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const emailAddress = document.getElementById('email__alert').value;
+    alert(`You successfully send message to ${emailAddress}!`);
+});
