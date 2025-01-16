@@ -23,15 +23,17 @@
 
 const modal = document.getElementById("modal");
 const openModalButton = document.getElementById("openModal");
-const closeModalButton = document.querySelector(".close-button");
+const closeModal = (event) => {
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+};
 
 openModalButton.addEventListener("click", function() {
     modal.style.display = "block";
 });
 
-closeModalButton.addEventListener("click", function() {
-    modal.style.display = "none";
-});
+window.onclick = closeModal;
 
 window.addEventListener("click", function(event) {
     if (event.target === modal) {
