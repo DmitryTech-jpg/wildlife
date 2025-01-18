@@ -82,9 +82,7 @@
             </div>
         </section>
         <section class="animals">
-            <div class="slider">
-                <img src="./assets/icons/min.svg" alt="min" class="slider__min">
-            </div>
+            <button class="button prev" onclick="changeSlide(-1)">&#10094;</button>
             <div class="animals__block">
                 <div class="animal__card">
                     <figure class="animal__card-deer">
@@ -108,9 +106,7 @@
                     </figure>
                 </div>                
             </div>
-            <div class="slider">
-                <img src="./assets/icons/max.svg" alt="max" class="slider__max">
-            </div>
+            <button class="button next" onclick="changeSlide(1)">&#10095;</button>
         </section>
         <div class="animal__subtitle">Get notified about new amazing articles</div>
             <form class="email-form" id="email">
