@@ -57,3 +57,21 @@ document.getElementById('email').addEventListener('submit', function(event) {
     const emailAddress = document.getElementById('email__alert').value;
     alert(`You successfully send message to ${emailAddress}!`);
 }); // забыл переключиться на ветку чтобы закрыть задачу
+
+let currentSlide = 0;
+
+function changeSlide(direction) {
+    const slides = document.querySelector(".animals__block");
+    const totalSlides = document.querySelectorAll(".animal__card").length;
+
+    currentSlide += direction;
+
+    if (currentSlide < 0) {
+        currentSlide = totalSlides - 1;
+    } else if (currentSlide >= totalSlides) {
+        currentSlide = 0;
+    }
+
+    const offset = -currentSlide * 100;
+    slides.style.transform = `translateX(${offset}%)`;
+}

@@ -380,15 +380,14 @@
     padding-top: 120px;
 }
 
-.slider {
-    margin: 0 70px;
-}
+
 
 .animals__block {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: 0 20px;
+    transition: transform 0.5s ease;
 }
 
 .animal__card {
