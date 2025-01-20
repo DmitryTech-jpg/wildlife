@@ -315,6 +315,8 @@
     width: 399px;
     height: 100px;
     border: 2px solid #BDBDBD;
+    resize: vertical; 
+    max-height: 140px;
 }
 
 .btn {
