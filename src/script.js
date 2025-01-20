@@ -58,7 +58,6 @@ document.getElementById('email').addEventListener('submit', function(event) {
     alert(`You successfully send message to ${emailAddress}!`);
 }); // забыл переключиться на ветку чтобы закрыть задачу
 
-let currentSlide = 0;
 let animals = ['deer', 'squirrel', 'bird'];
 
 const animalCards = {
