@@ -58,20 +58,56 @@ document.getElementById('email').addEventListener('submit', function(event) {
     alert(`You successfully send message to ${emailAddress}!`);
 }); // забыл переключиться на ветку чтобы закрыть задачу
 
-let currentSlide = 0;
+let animals = ['deer', 'squirrel', 'bird'];
 
+const animalCards = {
+    deer: `
+        <div class="animal__card">
+            <figure class="animal__card-deer">
+                <img src="./assets/img/Deer.png" alt="Deer" class="animal__card-deer-bg">
+                <h4 class="animal__card-title-deer">Deer</h4>
+                <p class="animal__card-desc-deer">Naturalist investigation</p>
+            </figure>
+        </div>
+    `,
+    squirrel: `
+        <div class="animal__card">
+            <figure class="animal__card-squirrel">
+                <img src="./assets/img/Squirrel.png" alt="Squirrel" class="animal__card-squirrel-bg">
+                <h4 class="animal__card-title-squirrel">Squirrel</h4>
+                <p class="animal__card-desc-squirrel">Kamikaze squirrels</p>
+            </figure>
+        </div>
+    `,
+    bird: `
+        <div class="animal__card">
+            <figure class="animal__card-bird">
+                <img src="./assets/img/Bird.png" alt="Bird" class="animal__card-bird-bg">
+                <h4 class="animal__card-title-bird">Bird</h4>
+                <p class="animal__card-desc-bird">Birds Fight club</p>
+            </figure>
+        </div>
+    `
+};
+
+// Функция для обновления HTML
+function updateHTML() {
+    const animalsBlock = document.getElementById('animalsBlock');
+    animalsBlock.innerHTML = animals.map(animal => animalCards[animal]).join('');
+}
+
+// Функция для изменения порядка элементов
 function changeSlide(direction) {
-    const slides = document.querySelector(".animals__block");
-    const totalSlides = document.querySelectorAll(".animal__card").length;
-
-    currentSlide += direction;
-
-    if (currentSlide < 0) {
-        currentSlide = totalSlides - 1;
-    } else if (currentSlide >= totalSlides) {
-        currentSlide = 0;
+    if (direction === 'next') {
+        const firstElement = animals.shift();
+        animals.push(firstElement);
+    } else if (direction === 'prev') {
+        const lastElement = animals.pop();
+        animals.unshift(lastElement);
     }
 
-    const offset = -currentSlide * 100;
-    slides.style.transform = `translateX(${offset}%)`;
+    updateHTML(); // Обновляем HTML после изменения массива
 }
+
+// Инициализация (первый рендер)
+updateHTML();
