@@ -59,19 +59,12 @@ document.getElementById('email').addEventListener('submit', function(event) {
 }); // забыл переключиться на ветку чтобы закрыть задачу
 
 let currentSlide = 0;
+let animals = ['deer', 'squirrel', 'bird'];
 
 function changeSlide(direction) {
-    const slides = document.querySelector(".animals__block");
-    const totalSlides = document.querySelectorAll(".animal__card").length;
-
-    currentSlide += direction;
-
-    if (currentSlide < 0) {
-        currentSlide = totalSlides - 1;
-    } else if (currentSlide >= totalSlides) {
-        currentSlide = 0;
+    // ['squirrel', 'bird', 'deer']
+    if (direction === 'next') {
+        return [animals[1], animals[2], animals[0]];
     }
-
-    const offset = -currentSlide * 100;
-    slides.style.transform = `translateX(${offset}%)`;
+    
 }

@@ -82,7 +82,9 @@
             </div>
         </section>
         <section class="animals">
-            <button class="button prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="button__prev" onclick="changeSlide(-1)">
+                <img src="/src/assets/icons/arrow.svg" alt="arrow prev">
+            </button>
             <div class="animals__block">
                 <div class="animal__card">
                     <figure class="animal__card-deer">
@@ -106,7 +108,9 @@
                     </figure>
                 </div>                
             </div>
-            <button class="button next" onclick="changeSlide(1)">&#10095;</button>
+            <button class="button__next" onclick="changeSlide('next')">
+                <img src="/src/assets/icons/arrow.svg" alt="arrow next">
+            </button>
         </section>
         <div class="animal__subtitle">Get notified about new amazing articles</div>
             <form class="email-form" id="email">
