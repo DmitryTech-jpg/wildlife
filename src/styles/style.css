@@ -2,28 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-/* адаптивная верстка */
-
-/* @media (max-width: 1200px) {
-    .adaptive {
-        width: 1024px;
-    }
-}
-
-@media (max-width: 1024px) {
-    .adaptive {
-        width: 768px;
-    }
-} */
-
-
-
-/* @media (max-width: 420px) {
-    .adaptive {
-        width: 340px;
-    }
-} */
-
 /* parents */
 
 .wrapper {
@@ -217,6 +195,8 @@
     background: #743511;
 }
 
+/* modal window start */
+
 .modal {
     display: none;
     position: fixed;
@@ -289,7 +269,7 @@
     line-height: 27px;
     color: #BDBDBD;
 }
-/* fix comment */
+
 .input__field {
     width: 399px;
     background: transparent;
@@ -340,6 +320,8 @@
     text-decoration-skip-ink: none;
     color: #F7F7F7;
 }
+
+/* modal window end  */
 /* intro  styles end */
 
 /* main styles start */
@@ -591,12 +573,14 @@
 
 .footer__nav {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: baseline;
 }
 
 .footer__list {
     display: flex;
+    flex-wrap: wrap;
     list-style-type: none;
     align-items: baseline;
     padding: 0;
@@ -627,7 +611,42 @@
 
 /* media start */
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1200px) {
+    .wrapper {
+        padding: 30px;
+    }
+    .intro {
+        width: 100%;
+    }
+    .animals__block {
+        margin: 0;
+    }
+    .animal__card {
+        margin: 0 5px;
+    }
+    .footer__wrapper {
+        padding: 0 30px;
+    }
+    .footer__item {
+        margin-left: 80px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .animal__card {
+        display: block;
+    }
+    .animal__card:first-child {
+        display: none;
+    }
+    .footer__item {
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
     .header__burger {
         display: block;
     }
@@ -680,4 +699,17 @@
     .header__nav-close-line:last-child {
         transform: translateY(-50%) rotate(-45deg);
     }
+    .animal__card {
+        display: block;
+    }
+    .animal__card:first-child {
+        display: none;
+    }
+    .animal__card:last-child {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .
 }

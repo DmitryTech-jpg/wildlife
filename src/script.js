@@ -56,7 +56,7 @@ document.getElementById('email').addEventListener('submit', function(event) {
 
     const emailAddress = document.getElementById('email__alert').value;
     alert(`You successfully send message to ${emailAddress}!`);
-}); // забыл переключиться на ветку чтобы закрыть задачу
+});
 
 let animals = ['deer', 'squirrel', 'bird'];
 
